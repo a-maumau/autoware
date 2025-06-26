@@ -34,6 +34,7 @@
       - libcusparse-dev-{{ cuda__dash_case_cuda_version.stdout }}
       - libcublas-dev-{{ cuda__dash_case_cuda_version.stdout }}
       - libcurand-dev-{{ cuda__dash_case_cuda_version.stdout }}
+      - libcusolver-dev-{{ cuda__dash_case_cuda_version.stdout }}
       - cuda-nvml-dev-{{ cuda__dash_case_cuda_version.stdout }}
       - cuda-nvrtc-dev-{{ cuda__dash_case_cuda_version.stdout }}
     update_cache: true
@@ -47,6 +48,7 @@
       - libcusparse-{{ cuda__dash_case_cuda_version.stdout }}
       - libcublas-{{ cuda__dash_case_cuda_version.stdout }}
       - libcurand-{{ cuda__dash_case_cuda_version.stdout }}
+      - libcusolver-dev-{{ cuda__dash_case_cuda_version.stdout }}
     update_cache: true
   when: install_devel == 'N'
 
